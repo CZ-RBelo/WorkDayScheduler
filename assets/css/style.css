@@ -8,8 +8,9 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000; 
-  width: 90%; 
+  color: #000000;
+  width: 90%;
+  padding-top: 10px;
 }
 
 .jumbotron {
@@ -25,17 +26,19 @@ textarea {
 }
 
 .time-block {
-  text-align: center;
-  border-top-left-radius: 15px;
+  text-align: center;  
   border-top: 1px dashed #000000;
+  margin-top: 1px;
+  padding-top: 10px;
 }
 
 .row {
   white-space: pre-wrap;
-  height: 80px;  
+  height: 80px;
 }
-.col-8 {
-  border-top: 1px solid black;  
+
+.col-8 {  
+  margin-top: 1px;
 }
 
 .hour {
@@ -59,15 +62,25 @@ textarea {
 }
 
 .saveBtn {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  border-width: 0px;  
+  background-color: #06aed5;  
+  margin-top: 1px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn :hover {
+  font-size: 40px;
   transition: all 0.3s ease-in-out;
 }
+
+/*
+.saveBtn :focus {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-width: 0px; 
+}
+*/

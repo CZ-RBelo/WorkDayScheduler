@@ -14,7 +14,7 @@ function displayNow() {
     nowDisplay.text(rightNow);
 }
 
-//text area, class = "event"; if Save button clicked, set item to local storage and persist; upon refresh, need to get item from local storage too
+// save text area to the local storage
 $(".saveBtn").on("click", function (event) {
     var calendarItem =
         event.target.parentElement.previousElementSibling.children[0].value;
