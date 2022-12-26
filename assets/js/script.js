@@ -1,4 +1,3 @@
-
 // variable used to get HTML id of display time
 var nowDisplay = $('#currentDay');
 
@@ -14,14 +13,18 @@ function displayNow() {
     nowDisplay.text(rightNow);
 }
 
-// save text area to the local storage
+// save text area into the local storage
 $(".saveBtn").on("click", function (event) {
     var calendarItem =
         event.target.parentElement.previousElementSibling.children[0].value;
     localStorage.setItem(event.target.attributes[0].value, calendarItem);
 });
 
+// function to check data on local storage
 $(document).ready(function () {
+
+    // get and display the local data for each working hour
+
     if (localStorage["9am"] !== null && localStorage["9am"] !== undefined) {
         var t9 = $("<p>" + localStorage["9am"] + "</p>");
         $("#t9").append(t9[0].innerText);
@@ -82,10 +85,14 @@ $(document).ready(function () {
 $.each(timeBlock, function () {
     var hourId = parseInt($(this).attr("id"));
     //console.log(parseInt($(this).attr("id")));
+
+    // for events at the current hour, set the colour to red. 
     if (hourId === nowHour) {
         $(this).next().addClass("present");
+    // for past events set the colour to grey 
     } else if (hourId < nowHour) {
         $(this).next().addClass("past");
+    // for future events set the colour to green
     } else if (hourId > nowHour) {
         $(this).next().addClass("future");
     }
