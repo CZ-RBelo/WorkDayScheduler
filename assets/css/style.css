@@ -76,11 +76,3 @@ textarea {
   font-size: 40px;
   transition: all 0.3s ease-in-out;
 }
-
-/*
-.saveBtn :focus {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-width: 0px; 
-}
-*/
