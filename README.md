@@ -34,7 +34,7 @@ The app allows the user to enter and save in local storage an event when they cl
 
 The images below illustrates the Work Day Scheduler web page appearance:    
 
-![Desktop web page mock-up] [label](assets/WorkDayScheduler-Mock-Up.wmv)
+![Desktop web page mock-up] (./assets/WorkDayScheduler-Mock-Up.wmv)
 
 ## Contributing
 
