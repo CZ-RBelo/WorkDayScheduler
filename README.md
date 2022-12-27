@@ -36,6 +36,12 @@ The images below illustrates the Work Day Scheduler web page appearance:
 
 ![Desktop web page mock-up](assets/WorkDayScheduler-Mock-Up.mp4)
 
+
+
+https://user-images.githubusercontent.com/91415469/209678999-6b3fc184-699e-431a-b1d7-2232180b1167.mp4
+
+
+
 ## Contributing
 
 Why you should contribute to an open-source project?  
